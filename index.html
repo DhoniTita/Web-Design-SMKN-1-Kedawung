@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+    <title>Web Design SMKN 1 Kedawung</title>
+</head>
+<body>
+    <nav>
+        <div class="menu">
+            <button class="back" id="navshow">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <h2>menu</h2>
+        </div>
+        <ul class="navbar">
+            <li class="nav-item"><a href="#home"><i class="bi bi-house home active"></i>Home</a></li>
+            <li class="nav-item"><a href="#about"><i class="bi bi-question-circle about "></i>About</a></li>
+            <li class="nav-item"><a href="#lesson"><i class="bi bi-book lesson"></i>lesson</a></li>
+            <li class="nav-item"><a href="#person"><i class="bi bi-file-person person"></i>Person</a></li>
+            <li class="nav-item"><a href="#project"><i class="bi bi-code-slash project"></i>Project</a></li>
+        </ul>
+    </nav>
+    <script>
+        document.getElementById('navshow').addEventListener('click', function() {
+            document.querySelector('nav').classList.toggle('active');
+        });
+    </script>
+
+    <main>
+        <section id="home">
+            <div class="content" style="background-image: url(./Decoration/Home/Main-Background.gif); background-repeat: no-repeat; background-size: cover;">
+                <img src="./Decoration/Home/bg-2.png" alt="" class="decoration">
+                <img src="./Decoration/Home/bg-3.png" alt="" class="decoration">
+                <img src="./Decoration/Home/bg-4.png" alt="" class="decoration">
+                <div class="hero-content">
+                    <h1 class="hero-title">Web Designer <br>SMKN 1 Kedawung</h1>
+                    <p class="hero-subtitle">the Web Designer from SMKN 1 Kedawung</p>
+                    <a href="#lessons" class="L-btn">see</a>
+                </div>
+                <div class="hero-image">
+                    <img src="./Image/Logo wd-1.png" alt="Github" />
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="content">
+                <img src="./Decoration/About/bg-1.png" style="width:5vw; height:5vw; min-width: 25px; min-height: 25px; animation-delay: 0s; left: 05% ;bottom: -50px; opacity: 80%;" alt="" class="decoration">
+                <img src="./Decoration/About/bg-2.png" style="width:5vw; height:5vw; min-width: 25px; min-height: 25px; animation-delay: 8s; left: 20% ;bottom: -50px; opacity: 80%;" alt="" class="decoration">
+                <img src="./Decoration/About/bg-3.png" style="width:5vw; height:5vw; min-width: 25px; min-height: 25px; animation-delay: 4s; left: 35% ;bottom: -50px; opacity: 80%;" alt="" class="decoration">
+                <img src="./Decoration/About/bg-4.png" style="width:5vw; height:5vw; min-width: 25px; min-height: 25px; animation-delay: 2s; left: 50% ;bottom: -50px; opacity: 80%;" alt="" class="decoration">
+                <img src="./Decoration/About/bg-5.png" style="width:5vw; height:5vw; min-width: 25px; min-height: 25px; animation-delay: 9s; left: 65% ;bottom: -50px; opacity: 80%;" alt="" class="decoration">
+                <img src="./Decoration/About/bg-6.png" style="width:5vw; height:5vw; min-width: 25px; min-height: 25px; animation-delay: 6s; left: 75% ;bottom: -50px; opacity: 80%;" alt="" class="decoration">
+                <img src="./Decoration/About/bg-7.png" style="width:5vw; height:5vw; min-width: 25px; min-height: 25px; animation-delay: 3s; left: 90% ;bottom: -50px; opacity: 80%;" alt="" class="decoration">
+
+                <h1 class="about-text">About <b>SMKN 1 Kedawung</b></h1>
+                <div class="about-menu">
+                    <img src="./Image/KDW-logo.png" alt="SMKN 1 Kedawung" class="menu-icon" id="icon1">
+                    <img src="./Image/Logo DKV nobg.png" alt="MCC" class="menu-icon" id="icon2">
+                    <img src="./Image/Logo wd-1.png" alt="Web Designer" class="menu-icon" id="icon3">
+                </div>
+                <div class="about-content">
+                    <div class="img-holder none">
+                        <img src="./Image/Foto-kdw.png" alt="image" id="image1" class="about-img left">
+                        <img src="./Image/Foto-kdw-2.png" alt="image" id="image2" class="about-img right">
+                        <img src="./Image/Foto-kdw.png" alt="image" id="image3" class="about-img left">
+                        <img src="./Image/Foto-kdw-2.png" alt="image" id="image4" class="about-img right">
+                    </div>
+                    <button id="ImgShow" onclick="show_img()">Lihat Foto</button>
+                    <p id="about-paragraf">Profil SMKN 1 Kedawung Cirebon Nama Sekolah: SMK Negeri 1 Kedawung Alamat: Jl. Ir. H. Juanda No. 91, Kedawung, Kabupaten Cirebon, Jawa Barat Website: https://smkn1kedawung.sch.id .SMKN 1 Kedawung adalah salah satu Sekolah Menengah Kejuruan (SMK) negeri favorit di Kabupaten Cirebon yang berfokus pada pendidikan vokasional. Sekolah ini bertujuan mencetak lulusan yang siap kerja, berdaya saing tinggi, dan mampu mengikuti perkembangan teknologi serta dunia industri.Visi:Menjadi sekolah kejuruan yang unggul dalam menghasilkan tenaga kerja profesional, berkarakter, dan kompetitif di tingkat nasional maupun internasional.Misi:- Meningkatkan mutu pendidikan dan pelatihan kejuruan, - Menjalin kerja sama dengan dunia usaha dan dunia industri (DUDI),- Membentuk lulusan yang disiplin, beretika, dan memiliki kompetensi sesuai jurusannya,- Mengembangkan kreativitas dan inovasi peserta didik melalui kegiatan intrakurikuler dan ekstrakurikuler, Prestasi SMKN 1 Kedawung dikenal aktif dalam lomba-lomba kejuruan seperti LKS (Lomba Kompetensi Siswa), lomba desain, lomba jaringan komputer, dan kegiatan kewirausahaan, baik tingkat kabupaten, provinsi, maupun nasional.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="lesson">
+            <div class="content" style="overflow: hidden;">
+                <img src="./Decoration/Lesson/bg-head.gif" alt="" srcset="" class="decoration" style="width: 150px; top: -32px; left: -30px;">
+                <div style="width: 100%; height: 100px;  z-index: 1; background-image: url(./Decoration/Lesson/head-main-bg.gif); background-size: cover; background-position: 0 -30px;" alt="" class="decoration" ></div>
+
+                <h1 class="lesson-text">Lesson</h1>
+                <p class="lesson-subtitle">Penasaran langkah-langkah membuat sebuah website?.silahkan ini adalah materi awal untuk membuat sebuah website, ayo mulai belajar web designer sekarang juga</p>
+                <div class="lesson-menu">
+                    <a href=""><img src="./Image/HTML-Logo.png" alt="HTML" class="lesson-image"></a>
+                    <a href=""><img src="./Image/CSS-logo.png" alt="CSS" class="lesson-image"></a>
+                    <a href=""><img src="./Image/Javascript-logo.png" alt="Javascript" class="lesson-image"></a>
+                    <a href=""><img src="./Image/Github.png" alt="GitHub" class="lesson-image"></a>
+                    <div class="lesson-bg">
+                        <div class="lesson b1"></div>
+                        <div class="lesson b2"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="person">
+            <div class="content">
+                <img src="./Decoration/Person/Main-bg-unscreen.gif" style="left: 50%; transform: translateX(-50%);" alt="" class="decoration">
+                <div class="person-list">
+                    <div class="person-container" style="--jumlah: 16">
+                        <div class="person-items" style="--posisi: 1"><img src="" alt=""></div>
+                        <div class="person-items" style="--posisi: 2"><img src="" alt=""></div>
+                        <div class="person-items" style="--posisi: 3"><img src="" alt=""></div>
+                        <div class="person-items" style="--posisi: 4"><img src="" alt=""></div>
+                        <div class="person-items" style="--posisi: 5"><img src="" alt=""></div>
+                        <div class="person-items" style="--posisi: 6"><img src="" alt=""></div>
+                        <div class="person-items" style="--posisi: 7"><img src="" alt=""></div>
+                        <div class="person-items" style="--posisi: 8"><img src="" alt=""></div>
+                        <div class="person-items" style="--posisi: 9"><img src="" alt=""></div>
+                        <div class="person-items" style="--posisi: 10"><img src="" alt=""></div>
+                        <div class="person-items" style="--posisi: 11"><img src="" alt=""></div>
+                        <div class="person-items" style="--posisi: 12"><img src="" alt=""></div>
+                        <div class="person-items" style="--posisi: 13"><img src="" alt=""></div>
+                        <div class="person-items" style="--posisi: 14"><img src="" alt=""></div>
+                        <div class="person-items" style="--posisi: 15"><img src="" alt=""></div>
+                        <div class="person-items" style="--posisi: 16"><img src="" alt=""></div>
+                    </div>
+                </div>
+                <div class="person-text">
+                        <h1>Hello <br>gays</h1>
+                        <p>Penasaran dengan para mas/mba yang ada di divisi WD?. kami perkenalkan para anggota web design. salam kenal ya</p>
+                    </div>
+            </div>    
+        </section>
+
+        <section id="project">
+            <div class="content">
+                <div class="project-text">
+                    <h1>PROJECT</h1>
+                    <p>Kalo kalian nanya di WD ngapain aja sih..?, ini adalah project-project yang sudah kami buat selama wenjadi anggota wib design</p>
+                </div>
+                <div class="project-list">
+                    <div style="background-image: url(./Decoration/Project/bg-one.jpg);" alt="" class="decoration bg"></div>
+                    <div style="background-image: url(./Decoration/Project/bg-two.gif);" alt="" class="decoration bg"></div>
+                    <div class="gif g1" style="background-image: url(./Decoration/Project/bg-1.gif);"></div>
+                    <div class="gif g2" style="background-image: url(./Decoration/Project/bg-2.gif);"></div>
+                    <div class="project-swaper" style="
+                        --width: 200px;
+                        --height: 200px;
+                        --quantity: 7;">
+
+                        <div class="project-container">
+                            <div class="project-items" style="--position: 1;"><img src="" alt=""></div>
+                            <div class="project-items" style="--position: 2;"><img src="" alt=""></div>
+                            <div class="project-items" style="--position: 3;"><img src="" alt=""></div>
+                            <div class="project-items" style="--position: 4;"><img src="" alt=""></div>
+                            <div class="project-items" style="--position: 5;"><img src="" alt=""></div>
+                            <div class="project-items" style="--position: 6;"><img src="" alt=""></div>
+                            <div class="project-items" style="--position: 7;"><img src="" alt=""></div>
+                        </div>
+                    </div>
+
+                    <div class="project-swaper" reverse="true" style="
+                        --width: 200px;
+                        --height: 200px;
+                        --quantity: 7;">
+
+                        <div class="project-container">
+                            <div class="project-items" style="--position: 1;"><img src="" alt=""></div>
+                            <div class="project-items" style="--position: 2;"><img src="" alt=""></div>
+                            <div class="project-items" style="--position: 3;"><img src="" alt=""></div>
+                            <div class="project-items" style="--position: 4;"><img src="" alt=""></div>
+                            <div class="project-items" style="--position: 5;"><img src="" alt=""></div>
+                            <div class="project-items" style="--position: 6;"><img src="" alt=""></div>
+                            <div class="project-items" style="--position: 7;"><img src="" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="project-list">
+                    <div class="project-item">
+                        <img src="./Image/Project1.png" alt="project" class="project-image">
+                        <h2 class="project-name">Project</h2>
+                        <p class="project-description">Description of Project</p>
+                    </div>
+                    <div class="project-item">
+                        <img src="./Image/Project2.png" alt="project" class="project-image">
+                        <h2 class="project-name">Project</h2>
+                        <p class="project-description">Description of Project</p>
+                    </div>
+                    <div class="project-item">
+                        <img src="./Image/Project3.png" alt="project" class="project-image">
+                        <h2 class="project-name">Project</h2>
+                        <p class="project-description">Description of Project</p>
+                    </div>
+                    <div class="project-item">
+                        <img src="./Image/Project4.png" alt="project" class="project-image">
+                        <h2 class="project-name">Project</h2>
+                        <p class="project-description">Description of Project</p>
+                    </div>
+                    <div class="project-item">
+                        <img src="./Image/Project5.png" alt="project" class="project-image">
+                        <h2 class="project-name">Project</h2>
+                        <p class="project-description">Description of Project</p>
+                    </div>
+                    <div class="project-item">
+                        <img src="./Image/Project6.png" alt="project" class="project-image">
+                        <h2 class="project-name">Project</h2>
+                        <p class="project-description">Description of Project</p>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+       
+    </main>
+    <script src="script.js"></script>
+</body>
+</html> 
