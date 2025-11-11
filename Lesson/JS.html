@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belajar JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigasi Atas -->
+  <div class="menu">
+    <a href="./HTML.html" class="icon-menu"><i><img src="../Image/HTML-Logo.png" alt=""></i></a>
+    <a href="./CSS.html" class="icon-menu"><i><img src="../Image/CSS-logo.png" alt=""></i></a>
+    <a href="./JS.html" class="icon-menu active"><i><img src="../Image/Javascript-logo.png" alt=""></i></a>
+    <a href="./GH.html" class="icon-menu"><i><img src="../Image/Github.png" alt=""></i></a>
+  </div>
+
+  <!-- Judul Halaman -->
+  <div class="tittle">
+    <h1>Belajar JavaScript</h1>
+    <img src="../Image/Javascript-logo.png" alt="">
+    <p><b>JavaScript (JS)</b> adalah bahasa pemrograman yang digunakan untuk membuat halaman web menjadi interaktif dan dinamis. Dengan JavaScript, kamu bisa mengatur perilaku elemen HTML, menampilkan data, hingga membuat animasi dan aplikasi web.</p>
+  </div>
+
+  <!-- Daftar Materi -->
+  <div class="list">
+    <div class="item">
+      <h1 class="item-name" data-target="A01">1. Pengenalan JavaScript</h1>
+      <h1 class="item-name" data-target="A02">2. Dasar Sintaks JavaScript</h1>
+      <h1 class="item-name" data-target="A03">3. Variabel & Tipe Data</h1>
+      <h1 class="item-name" data-target="A04">4. Operator</h1>
+      <h1 class="item-name" data-target="A05">5. Percabangan (If, Else, Switch)</h1>
+      <h1 class="item-name" data-target="A06">6. Perulangan (Loop)</h1>
+      <h1 class="item-name" data-target="A07">7. Fungsi (Function)</h1>
+      <h1 class="item-name" data-target="A08">8. Array & Object</h1>
+      <h1 class="item-name" data-target="A09">9. DOM (Document Object Model)</h1>
+      <h1 class="item-name" data-target="A10">10. Event & Interaksi</h1>
+      <h1 class="item-name" data-target="A11">11. Proyek Mini</h1>
+    </div>
+
+    <div class="list-content">
+
+      <!-- SEGMENT 1 -->
+      <div class="item-content A01">
+        <button class="btn-back">← Kembali</button>
+        <h2>1. Pengenalan JavaScript</h2>
+        <p>JavaScript adalah bahasa pemrograman untuk menambahkan interaksi di halaman web. Bersama HTML dan CSS, JavaScript membentuk <b>“tiga pilar utama web”</b>.</p>
+        <h3>Cara Menjalankan JavaScript</h3>
+        <ul>
+          <li><b>Inline:</b> <code>&lt;button onclick="alert('Halo!')"&gt;Klik&lt;/button&gt;</code></li>
+          <li><b>Internal:</b> di dalam tag <code>&lt;script&gt;</code> di HTML</li>
+          <li><b>External:</b> di file <code>script.js</code> lalu dihubungkan ke HTML</li>
+        </ul>
+      </div>
+
+      <!-- SEGMENT 2 -->
+      <div class="item-content A02">
+        <button class="btn-back">← Kembali</button>
+        <h2>2. Dasar Sintaks JavaScript</h2>
+        <pre><code>// Komentar satu baris
+/* Komentar multi baris */
+
+// Menampilkan teks
+console.log("Halo Dunia!");
+alert("Selamat datang!");
+document.write("Teks ke halaman");
+</code></pre>
+      </div>
+
+      <!-- SEGMENT 3 -->
+      <div class="item-content A03">
+        <button class="btn-back">← Kembali</button>
+        <h2>3. Variabel & Tipe Data</h2>
+        <p>Variabel digunakan untuk menyimpan nilai. Ada tiga cara mendeklarasikan:</p>
+        <pre><code>let nama = "Rado";
+const umur = 17;
+var kota = "Jakarta";
+</code></pre>
+        <p><b>Tipe data:</b> String, Number, Boolean, Object, Array, Null, Undefined.</p>
+      </div>
+
+      <!-- SEGMENT 4 -->
+      <div class="item-content A04">
+        <button class="btn-back">← Kembali</button>
+        <h2>4. Operator</h2>
+        <pre><code>// Aritmatika
+let x = 10 + 5;   // 15
+let y = 10 * 2;   // 20
+
+// Perbandingan
+x > y;   // false
+x == y;  // false
+x != y;  // true
+
+// Logika
+true && false; // false
+true || false; // true
+</code></pre>
+      </div>
+
+      <!-- SEGMENT 5 -->
+      <div class="item-content A05">
+        <button class="btn-back">← Kembali</button>
+        <h2>5. Percabangan (If, Else, Switch)</h2>
+        <pre><code>let nilai = 80;
+
+if (nilai >= 90) {
+  console.log("A");
+} else if (nilai >= 75) {
+  console.log("B");
+} else {
+  console.log("C");
+}
+
+// Switch
+let hari = "Senin";
+switch (hari) {
+  case "Senin":
+    console.log("Awal minggu");
+    break;
+  case "Jumat":
+    console.log("Menjelang weekend!");
+    break;
+  default:
+    console.log("Hari biasa");
+}</code></pre>
+      </div>
+
+      <!-- SEGMENT 6 -->
+      <div class="item-content A06">
+        <button class="btn-back">← Kembali</button>
+        <h2>6. Perulangan (Loop)</h2>
+        <pre><code>// For
+for (let i = 1; i <= 5; i++) {
+  console.log("Angka ke-" + i);
+}
+
+// While
+let x = 1;
+while (x <= 3) {
+  console.log(x);
+  x++;
+}</code></pre>
+      </div>
+
+      <!-- SEGMENT 7 -->
+      <div class="item-content A07">
+        <button class="btn-back">← Kembali</button>
+        <h2>7. Fungsi (Function)</h2>
+        <pre><code>function sapa(nama) {
+  return "Halo, " + nama;
+}
+
+let hasil = sapa("Rado");
+console.log(hasil);
+
+// Fungsi panah (Arrow Function)
+const kali = (a, b) => a * b;
+console.log(kali(5, 2));
+</code></pre>
+      </div>
+
+      <!-- SEGMENT 8 -->
+      <div class="item-content A08">
+        <button class="btn-back">← Kembali</button>
+        <h2>8. Array & Object</h2>
+        <pre><code>// Array
+let buah = ["Apel", "Jeruk", "Mangga"];
+console.log(buah[1]); // Jeruk
+
+// Object
+let orang = {
+  nama: "Rado",
+  umur: 17,
+  hobi: "Coding"
+};
+console.log(orang.nama);
+</code></pre>
+      </div>
+
+      <!-- SEGMENT 9 -->
+      <div class="item-content A09">
+        <button class="btn-back">← Kembali</button>
+        <h2>9. DOM (Document Object Model)</h2>
+        <p>DOM memungkinkan JavaScript mengakses dan memanipulasi elemen HTML.</p>
+        <pre><code>document.getElementById("judul").innerText = "Halo JS!";
+document.querySelector("p").style.color = "blue";
+</code></pre>
+      </div>
+
+      <!-- SEGMENT 10 -->
+      <div class="item-content A10">
+        <button class="btn-back">← Kembali</button>
+        <h2>10. Event & Interaksi</h2>
+        <pre><code>// Klik tombol
+document.getElementById("tombol").addEventListener("click", function() {
+  alert("Tombol diklik!");
+});
+</code></pre>
+        <p>Event umum: <b>click</b>, <b>mouseover</b>, <b>keyup</b>, <b>submit</b>.</p>
+      </div>
+
+      <!-- SEGMENT 11 -->
+      <div class="item-content A11">
+        <button class="btn-back">← Kembali</button>
+        <h2>11. Proyek Mini</h2>
+        <ul>
+          <li>Buat tombol yang menampilkan pesan “Halo Dunia” saat diklik</li>
+          <li>Buat form dengan validasi input</li>
+          <li>Buat animasi sederhana menggunakan JavaScript dan CSS</li>
+          <li>Buat penghitung waktu (timer) yang bertambah otomatis</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

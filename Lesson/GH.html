@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belajar Git & GitHub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigasi Atas -->
+  <div class="menu">
+    <a href="./HTML.html" class="icon-menu"><i><img src="../Image/HTML-Logo.png" alt=""></i></a>
+    <a href="./CSS.html" class="icon-menu"><i><img src="../Image/CSS-logo.png" alt=""></i></a>
+    <a href="./JS.html" class="icon-menu"><i><img src="../Image/Javascript-logo.png" alt=""></i></a>
+    <a href="./GH.html" class="icon-menu active"><i><img src="../Image/Github.png" alt=""></i></a>
+  </div>
+
+  <!-- Judul Halaman -->
+  <div class="tittle">
+    <h1>Belajar Git & GitHub</h1>
+    <img src="../Image/Github.png" alt="Logo GitHub">
+    <p><b>Git</b> adalah sistem kontrol versi (Version Control System) untuk melacak perubahan pada kode, sedangkan <b>GitHub</b> adalah layanan hosting untuk menyimpan repository Git secara online agar mudah dikelola dan dibagikan.</p>
+  </div>
+
+  <!-- Daftar Materi -->
+  <div class="list">
+    <div class="item">
+      <h1 class="item-name" data-target="A01">1. Pengenalan Git & GitHub</h1>
+      <h1 class="item-name" data-target="A02">2. Instalasi & Konfigurasi Awal</h1>
+      <h1 class="item-name" data-target="A03">3. Dasar Perintah Git</h1>
+      <h1 class="item-name" data-target="A04">4. Membuat & Mengelola Repository</h1>
+      <h1 class="item-name" data-target="A05">5. GitHub Remote & Push</h1>
+      <h1 class="item-name" data-target="A06">6. Branch & Merge</h1>
+      <h1 class="item-name" data-target="A07">7. Kolaborasi (Fork, Pull Request)</h1>
+      <h1 class="item-name" data-target="A08">8. Git Ignore & Readme</h1>
+      <h1 class="item-name" data-target="A09">9. Mengatasi Konflik</h1>
+      <h1 class="item-name" data-target="A10">10. Tips & Workflow Profesional</h1>
+    </div>
+
+    <div class="list-content">
+
+      <!-- SEGMENT 1 -->
+      <div class="item-content A01">
+        <button class="btn-back">← Kembali</button>
+        <h2>1. Pengenalan Git & GitHub</h2>
+        <p><b>Git</b> adalah sistem kontrol versi untuk melacak perubahan kode. Dengan Git, kamu bisa mengembalikan versi lama, membandingkan perubahan, dan berkolaborasi.</p>
+        <p><b>GitHub</b> adalah platform penyimpanan online untuk proyek Git. Kamu bisa berbagi, berkolaborasi, dan membuat portofolio publik di sana.</p>
+      </div>
+
+      <!-- SEGMENT 2 -->
+      <div class="item-content A02">
+        <button class="btn-back">← Kembali</button>
+        <h2>2. Instalasi & Konfigurasi Awal</h2>
+        <p>Langkah awal menggunakan Git:</p>
+        <pre><code># Cek versi Git
+git --version
+
+# Set identitas global
+git config --global user.name "Namamu"
+git config --global user.email "email@example.com"
+
+# Melihat konfigurasi
+git config --list
+</code></pre>
+      </div>
+
+      <!-- SEGMENT 3 -->
+      <div class="item-content A03">
+        <button class="btn-back">← Kembali</button>
+        <h2>3. Dasar Perintah Git</h2>
+        <pre><code># Membuat repo baru
+git init
+
+# Menambahkan file ke staging area
+git add nama_file
+git add .
+
+# Commit perubahan
+git commit -m "Pesan perubahan"
+
+# Melihat status
+git status
+
+# Melihat riwayat commit
+git log
+</code></pre>
+      </div>
+
+      <!-- SEGMENT 4 -->
+      <div class="item-content A04">
+        <button class="btn-back">← Kembali</button>
+        <h2>4. Membuat & Mengelola Repository</h2>
+        <p>Langkah umum:</p>
+        <ol>
+          <li>Buat folder proyek.</li>
+          <li>Jalankan <code>git init</code>.</li>
+          <li>Tambahkan file dan lakukan commit.</li>
+          <li>Hubungkan ke GitHub untuk menyimpan online.</li>
+        </ol>
+      </div>
+
+      <!-- SEGMENT 5 -->
+      <div class="item-content A05">
+        <button class="btn-back">← Kembali</button>
+        <h2>5. GitHub Remote & Push</h2>
+        <p>Hubungkan proyek lokal ke GitHub:</p>
+        <pre><code># Hubungkan repo lokal ke GitHub
+git remote add origin https://github.com/username/nama-repo.git
+
+# Mengirim perubahan ke GitHub
+git push -u origin main
+
+# Mengambil update dari GitHub
+git pull origin main
+</code></pre>
+      </div>
+
+      <!-- SEGMENT 6 -->
+      <div class="item-content A06">
+        <button class="btn-back">← Kembali</button>
+        <h2>6. Branch & Merge</h2>
+        <pre><code># Melihat branch
+git branch
+
+# Membuat branch baru
+git branch fitur-login
+
+# Berpindah branch
+git checkout fitur-login
+
+# Menggabungkan branch
+git merge fitur-login
+</code></pre>
+        <p>Branch berguna untuk bekerja pada fitur baru tanpa mengganggu kode utama.</p>
+      </div>
+
+      <!-- SEGMENT 7 -->
+      <div class="item-content A07">
+        <button class="btn-back">← Kembali</button>
+        <h2>7. Kolaborasi (Fork, Pull Request)</h2>
+        <p>Langkah kolaborasi di GitHub:</p>
+        <ol>
+          <li><b>Fork</b> → salin repo ke akunmu.</li>
+          <li><b>Clone</b> → unduh ke komputer.</li>
+          <li>Ubah kodenya.</li>
+          <li><b>Commit</b> dan <b>Push</b> ke repo kamu.</li>
+          <li>Buat <b>Pull Request</b> agar pemilik asli bisa menggabungkan.</li>
+        </ol>
+      </div>
+
+      <!-- SEGMENT 8 -->
+      <div class="item-content A08">
+        <button class="btn-back">← Kembali</button>
+        <h2>8. Git Ignore & Readme</h2>
+        <p><b>.gitignore</b> digunakan untuk mengecualikan file agar tidak diunggah ke GitHub.</p>
+        <pre><code># Contoh .gitignore
+node_modules/
+.env
+*.log
+</code></pre>
+        <p><b>README.md</b> digunakan untuk menjelaskan proyekmu di GitHub.</p>
+      </div>
+
+      <!-- SEGMENT 9 -->
+      <div class="item-content A09">
+        <button class="btn-back">← Kembali</button>
+        <h2>9. Mengatasi Konflik</h2>
+        <p>Konflik terjadi jika dua orang mengubah baris yang sama. Solusinya:</p>
+        <ol>
+          <li>Git akan menandai bagian konflik.</li>
+          <li>Periksa file yang bentrok.</li>
+          <li>Edit dan simpan versi yang benar.</li>
+          <li>Lakukan commit ulang.</li>
+        </ol>
+      </div>
+
+      <!-- SEGMENT 10 -->
+      <div class="item-content A10">
+        <button class="btn-back">← Kembali</button>
+        <h2>10. Tips & Workflow Profesional</h2>
+        <ul>
+          <li>Buat branch untuk setiap fitur.</li>
+          <li>Commit sesering mungkin dengan pesan jelas.</li>
+          <li>Gunakan <code>git pull</code> sebelum bekerja.</li>
+          <li>Gunakan <code>Pull Request</code> untuk review kode.</li>
+          <li>Gunakan tag & release untuk versi rilis.</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
